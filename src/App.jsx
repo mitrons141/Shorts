@@ -30,7 +30,7 @@ const App = () => {
     const options = {
       root: null,
       rootMargin: '0px',
-      threshold: 0.5, // Play when 50% of the video is in view
+      threshold: 0.1, // Play when 50% of the video is in view
     };
 
     const callback = (entries) => {
