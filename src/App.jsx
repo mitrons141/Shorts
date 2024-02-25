@@ -39,6 +39,7 @@ const App = () => {
           videoRefs.current[index].current.play();
           handlePlay(index);
         } else if (!entry.isIntersecting && isPlaying[index]) {
+          videoRefs.current[index].current.currentTime = 0; // Reset playback to start
           videoRefs.current[index].current.pause();
           setIsPlaying((prevIsPlaying) => {
             const newIsPlaying = [...prevIsPlaying];
